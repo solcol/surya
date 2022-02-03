@@ -1,0 +1,46 @@
+/*
+this selects all h1 elements within any "nav" element with the class "navbar"
+this is so we can style the brand of the website in the left of the menu
+*/
+nav.navbar h1 {
+    /* 2em is twice the default text size */
+    font-size: 2em;
+
+    font-weight: bold;
+}
+
+/*
+this is targeting the "span" element within the h1 element, allowing us to style
+the text "estate agents" differently
+*/
+nav.navbar h1 span {
+    font-size: 0.75em;
+    font-weight: normal;
+    /* font-style allows us to make the text italic */
+    font-style: italic;
+}
+
+/* 
+adding some spacing to the right side of the "surya estate agents" text
+*/
+nav.navbar div.navbar-brand {
+    margin-right: 1em;
+}
+
+/* 
+adding some spacing to the left and right of navbar items (links to pages)
+*/
+nav.navbar .navbar-item {
+    margin: 0 8px;
+
+    /* 
+        this is eqiv to doing:
+        margin-top: 0;
+        margin-right: 8px;
+        margin-bottom: 0;
+        margin-left: 8px;
+
+        margin: TOP RIGHT BOTTOM LEFT;
+    */
+
+}
