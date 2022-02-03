@@ -51,7 +51,7 @@ async function showProperties(sortMethod, filtering) {
         // += allows us to "append" (add to) an existing string
         outputHTML += `
             <div class="column is-one-third">
-                <a class="card" href="property.html">
+                <a class="card box" href="property.html">
                     <header class="card-header is-shadowless">
                         <p class="card-header-title">
                             ${p.title}
