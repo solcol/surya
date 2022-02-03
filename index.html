@@ -19,7 +19,8 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<!-- when the page loads, it will run this JavaScript function to sort and show the properties -->
+<body onload="showProperties('low-to-high')">
     <!-- The navigation bar that appears at the top of each page -->
     <!-- Adding the "navbar" class tells Bulma how to style it -->
     <!-- "is-dark" tells Bulma to use a dark style -->
@@ -75,20 +76,20 @@
 
                     <div class="tabs is-toggle is-medium is-toggle-rounded is-pulled-left">
                         <ul>
-                            <li>
-                                <a>
+                            <li class="is-active" id="filter-all">
+                                <a href="javascript:updateFilter('all')">
                                     <span class="icon is-small"><i class="fas fa-check-double"></i></span>
                                     <span>All</span>
                                 </a>
                             </li>
-                            <li class="is-active">
-                                <a>
+                            <li id="filter-houses">
+                                <a href="javascript:updateFilter('houses')">
                                     <span class="icon is-small"><i class="fas fa-home"></i></span>
                                     <span>Houses</span>
                                 </a>
                             </li>
-                            <li>
-                                <a>
+                            <li id="filter-flats">
+                                <a href="javascript:updateFilter('flats')">
                                     <span class="icon is-small"><i class="fas fa-building"></i></span>
                                     <span>Flats</span>
                                 </a>
@@ -102,11 +103,12 @@
                     <div class="control has-icons-left is-pulled-right">
                         <div class="select is-medium is-rounded">
                             <!-- "onchange" will run a JavaScript function whenever the selection changes -->
-                            <!-- in this case, it runs "reSort" and passes through the currently selected option's value -->
-                            <select onchange="reSort(this.value)">
-                                <option value="random">Random</option>
+                            <!-- in this case, it runs "sortAndShowProperties" and passes through the currently selected option's value -->
+                            <select onchange="showProperties(this.value)" id="sorter">
+                                <!-- "selected" means it is the default value for the selection -->
+                                <option value="low-to-high" selected="selected">Price (Low&raquo;High)</option>
                                 <option value="high-to-low">Price (High&raquo;Low)</option>
-                                <option value="low-to-high">Price (Low&raquo;High)</option>
+                                <option value="weighted">Random</option>
                             </select>
                         </div>
 
@@ -118,20 +120,35 @@
                         </span>
                     </div>
                 </div>
-
-
-
             </div>
-
         </section>
 
 
+        <section class="section">
+            <!-- In this section we will have the list of properties -->
+            <!-- This will be generated using JavaScript from a file -->
+
+            <!-- giving an element an ID allows us to use it more easilly in JavaScript -->
+            <!-- "is-multiline" allows our columns to have multiple rows -->
+            <div class="columns is-multiline" id="property-listing">
+                <!-- Anything in in here will be overwritten by the JavaScript -->
+                <p><i class="fas fa-fw fa-spin fa-circle-notch"></i> Loading Properties!</p>
+            </div>
+        </section>
     </main>
 
     <!-- The page footer -->
     <footer>
-
+        <!-- TODO: footer -->
     </footer>
+
+    <!-- this file contains our list of properties -->
+    <script src="js/_properties.js"></script>
+    <!-- this file contains for listing and sorting the elements -->
+    <script src="js/listing.js"></script>
+    <!-- this file contains for filtering properties -->
+    <script src="js/filtering.js"></script>
+
 </body>
 
 </html>
