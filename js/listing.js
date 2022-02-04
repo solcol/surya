@@ -51,7 +51,7 @@ async function showProperties(sortMethod, filtering) {
         // += allows us to "append" (add to) an existing string
         outputHTML += `
             <div class="column is-one-third">
-                <a class="card box" href="property.html">
+                <a class="card box" href="${p.url}">
                     <header class="card-header is-shadowless">
                         <p class="card-header-title">
                             ${p.title}
@@ -64,12 +64,6 @@ async function showProperties(sortMethod, filtering) {
                         </figure>
                     </div>
                     <div class="card-content">
-                        <div class="tags are-large">
-                            <span class="tag">${p.type}</span>
-                            <span class="tag">${p.is_for}</span>    
-                            ${p.rights ? `<span class="tag">${p.rights}</span>` : ''}
-                        </div>
-                        
                         <div class="tags are-medium">
                             <span class="tag"><i class="fas fa-fw fa-bed"></i>&nbsp;${p.beds ? p.beds : '?'} beds</span>
                             <span class="tag"><i class="fas fa-fw fa-bath"></i>&nbsp;${p.baths ? p.baths : '?'} baths</span>

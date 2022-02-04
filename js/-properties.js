@@ -2,103 +2,109 @@
 // on a production website, these would be pulled from a database rather than a file like this
 
 const properties = [{
-    "title": "Windsor House",
+    "title": "Bates Lane, Tanworth",
     "type": "house",
     "is_for": "purchase",
     "rights": "Freehold",
-    "price": 825000,
-    "price_type": "Guide Price",
-    "beds": 8,
+    "price": 2350000,
+    "beds": 5,
+    "baths": 4,
     "images": [
-        "https://media.rightmove.co.uk/dir/crop/10:9-16:9/55k/54640/85621438/54640_SBY190143_IMG_10_0000_max_476x317.jpg",
-        "https://media.rightmove.co.uk/dir/crop/10:9-16:9/55k/54640/85621438/54640_SBY190143_IMG_11_0000_max_476x317.jpg",
-        "https://media.rightmove.co.uk/dir/crop/10:9-16:9/55k/54640/85621438/54640_SBY190143_IMG_12_0000_max_476x317.jpg",
-        "https://media.rightmove.co.uk/dir/crop/10:9-16:9/55k/54640/85621438/54640_SBY190143_IMG_15_0000_max_476x317.jpg"
+        "img/houses/2/outside.jpeg",
+        "img/houses/2/garden.jpeg",
+        "img/houses/2/kitchen.jpeg",
+        "img/houses/2/garages.jpeg",
+        "img/houses/2/pool.jpeg"
     ],
+    "url": "property2.html",
     "weight": Math.random()
 },
 
 {
-    "title": "3 St Aulkmonds Square",
+    "title": "Gentlemans Lane, Henley",
+    "type": "house",
+    "is_for": "purchase",
+    "rights": "Freehold",
+    "price": 3350000,
+    "beds": 6,
+    "baths": '6',
+    "images": [
+        "img/houses/1/outside.jpeg",
+        "img/houses/1/garden.jpeg",
+        "img/houses/1/livingroom.jpeg",
+        "img/houses/1/pool.jpeg"
+    ],
+    "url": "property1.html",
+    "weight": Math.random()
+},
+
+{
+    "title": "Stratford Road, Wootton Warwen",
     "type": "house",
     "is_for": "purchase",
     "rights": "Freehold",
     "price": 450000,
-    "price_type": "Offers in Region Of",
     "beds": 3,
+    "baths": 1,
+    "images": [
+        "img/houses/3/outside.jpeg",
+        "img/houses/3/garden.jpeg",
+        "img/houses/3/kitchen.jpeg",
+    ],
+    "url": "property3.html",
+    "weight": Math.random()
+},
+
+{
+    "title": "High Street, Henley",
+    "type": "house",
+    "is_for": "purchase",
+    "rights": "Freehold",
+    "price": 975000,
+    "beds": 4,
     "baths": 2,
     "images": [
-        "https://media.rightmove.co.uk/dir/crop/10:9-16:9/20k/19503/114082757/19503_30982537_IMG_00_0000_max_476x317.jpeg",
-        "https://media.rightmove.co.uk/dir/crop/10:9-16:9/20k/19503/114082757/19503_30982537_IMG_01_0000_max_472x317.jpeg",
-        "https://media.rightmove.co.uk/dir/crop/10:9-16:9/20k/19503/114082757/19503_30982537_IMG_02_0000_max_472x317.jpeg"
+        "img/houses/5/outside.jpeg",
+        "img/houses/5/garden.jpeg",
+        "img/houses/5/kitchen.jpeg",
     ],
+    "url": "property5.html",
     "weight": Math.random()
 },
 
 {
-    "title": "Dogpole",
+    "title": "Buckley Green, Henley",
     "type": "house",
     "is_for": "purchase",
     "rights": "Freehold",
-    "price": 450000,
-    "beds": 3,
-    "baths": 1,
+    "price": 2450000,
+    "beds": 4,
+    "baths": '?',
     "images": [
-        "https://media.rightmove.co.uk/dir/crop/10:9-16:9/55k/54823/116922554/54823_SBY210108_IMG_00_0000_max_476x317.jpeg",
-        "https://media.rightmove.co.uk/dir/crop/10:9-16:9/55k/54823/116922554/54823_SBY210108_IMG_01_0000_max_476x317.jpeg",
-        "https://media.rightmove.co.uk/dir/crop/10:9-16:9/55k/54823/116922554/54823_SBY210108_IMG_02_0000_max_476x317.jpeg",
-        "https://media.rightmove.co.uk/dir/crop/10:9-16:9/55k/54823/116922554/54823_SBY210108_IMG_03_0000_max_476x317.jpeg"
+        "img/houses/6/outside.jpeg",
+        "img/houses/6/garden.jpeg",
+        "img/houses/6/kitchen.jpeg",
+        "img/houses/6/pool.jpeg"
     ],
+    "url": "property6.html",
     "weight": Math.random()
 },
 
 {
-    "title": "Quarry Place",
+    "title": "Chadwick House, Station Road, Solihull",
     "type": "flat",
     "is_for": "purchase",
     "rights": "Leasehold",
-    "price": 400000,
-    "beds": 1,
-    "baths": 1,
-    "images": [
-        "https://media.rightmove.co.uk/dir/crop/10:9-16:9/55k/54823/113676026/54823_SBY210151_IMG_01_0000_max_476x317.jpeg",
-        "https://media.rightmove.co.uk/dir/crop/10:9-16:9/55k/54823/113676026/54823_SBY210151_IMG_00_0000_max_476x317.jpeg",
-        "https://media.rightmove.co.uk/dir/crop/10:9-16:9/55k/54823/113676026/54823_SBY210151_IMG_03_0000_max_476x317.jpeg"
-    ],
-    "weight": Math.random()
-},
-
-{
-    "title": "Watergage Mansions",
-    "type": "flat",
-    "is_for": "purchase",
-    "rights": "Leasehold",
-    "price": 320000,
-    "beds": 3,
-    "baths": 1,
-    "images": [
-        "https://media.rightmove.co.uk/dir/crop/10:9-16:9/4k/3680/117402695/3680_31155224_IMG_00_0000_max_476x317.jpeg",
-        "https://media.rightmove.co.uk/dir/crop/10:9-16:9/4k/3680/117402695/3680_31155224_IMG_01_0000_max_476x317.jpeg",
-        "https://media.rightmove.co.uk/dir/crop/10:9-16:9/4k/3680/117402695/3680_31155224_IMG_02_0000_max_476x317.jpeg",
-        "https://media.rightmove.co.uk/dir/crop/10:9-16:9/4k/3680/117402695/3680_31155224_IMG_07_0000_max_476x317.jpeg"
-    ],
-    "weight": Math.random()
-},
-
-{
-    "title": "1 Belmont Mansions",
-    "type": "flat",
-    "is_for": "purchase",
-    "rights": "Leasehold",
-    "price": 315000,
-    "price_type": "Offers in the region of",
+    "price": 325000,
     "beds": 2,
     "baths": 2,
     "images": [
-        "https://media.rightmove.co.uk/dir/crop/10:9-16:9/20k/19503/82831866/19503_31147188_IMG_00_0000_max_476x317.jpeg",
-        "https://media.rightmove.co.uk/dir/crop/10:9-16:9/20k/19503/82831866/19503_31147188_IMG_01_0000_max_476x317.jpeg",
-        "https://media.rightmove.co.uk/dir/crop/10:9-16:9/20k/19503/82831866/19503_31147188_IMG_04_0000_max_476x317.jpeg"
+        "img/houses/4/outside.jpeg",
+        "img/houses/4/livingroom.jpeg",
+        "img/houses/4/kitchen.jpeg",
+        "img/houses/4/bathroom.jpeg"
     ],
+    "url": "property4.html",
     "weight": Math.random()
 }
 
