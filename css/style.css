@@ -9,6 +9,19 @@ nav.navbar h1 {
     font-weight: bold;
 }
 
+
+/* 
+styling the "surya estate agents" link
+*/
+
+nav a.navbar-brand {
+    color: inherit;
+}
+
+nav a.navbar-brand:hover {
+    text-decoration: underline;
+}
+
 /*
 this is targeting the "span" element within the h1 element, allowing us to style
 the text "estate agents" differently
@@ -23,7 +36,7 @@ nav.navbar h1 span {
 /* 
 adding some spacing to the right side of the "surya estate agents" text
 */
-nav.navbar div.navbar-brand {
+nav.navbar a.navbar-brand {
     margin-right: 1em;
 }
 
