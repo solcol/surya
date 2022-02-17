@@ -1,69 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Surya Estate Agents</title>
-
-    <!-- Bulma is a CSS "framework" that means we do not write as much of our own CSS -->
-    <!-- it provides various pre-made components that we can make use of -->
-    <!-- https://bulma.io -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-
-    <!-- This is importing FontAwesome, a kit that allows us to include simple icons on our webpages  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-    <!-- For some things we may wish to style them ourselves manually -->
-    <link rel="stylesheet" href="css/style.css">
-</head>
-
-<!-- when the page loads, it will run this JavaScript function to sort and show the properties -->
-<body onload="showProperties('low-to-high')">
-    <!-- The navigation bar that appears at the top of each page -->
-    <!-- Adding the "navbar" class tells Bulma how to style it -->
-    <!-- "is-dark" tells Bulma to use a dark style -->
-    <!-- "is-spaced" and "has-shadow" add more spacing and add a shadow -->
-    <nav class="navbar is-dark is-spaced has-shadow">
-        <!-- "navbar-brand" is where we can place the website logo or name -->
-        <a class="navbar-brand" href="/">
-            <!-- placing "estate agents" in a span element allows us to style it separately -->
-            <h1>Surya <span>Estate Agents</span></h1>
-        </a>
-
-        <!-- navbar-menu contains the actual links in the menu -->
-        <div class="navbar-menu">
-            <!-- Container for things that are aligned to the left of the navigation -->
-            <div class="navbar-start">
-                <a href="/" class="navbar-item">Browse Properties</a>
-            </div>
-
-            <!-- Container for things that are aligned to the right of the navigation -->
-            <div class="navbar-end">
-                <!-- Links to log in and register -->
-                <a href="javascript:alert('not implemented')" class="navbar-item">Register</a>
-                <a href="javascript:alert('not implemented')" class="navbar-item button is-black">Existing Customers</a>
-            </div>
-        </div>
-    </nav>
-
-    <!-- The page header containing the title of the page -->
-    <!-- "hero" is a common term for this, especially if it takes up a lot of the page -->
-    <!-- "is-info" sets the background colour to an informational one; bulma's default is blue -->
-    <header class="hero is-info">
-        <div class="hero-body">
-            <h1 class="title">Property Listing</h1>
-            <h2 class="subtitle">All the properties we have available</h2>
-        </div>
-    </header>
-
-
-    <!-- The main content of the page -->
-    <!-- "container" constrains the width of the element and horizontally centres it on the page -->
-    <main class="container box">
-        <!-- each distinct section on the page is wrapped in a "section" element -->
-        <!-- as previously, the "section" class tells bulma that we want this to be styled like a section -->
+---
+layout: default
+title: Home
+permalink: /
+---
         <section class="section">
 
             <!-- this tells bulma we want to create columns -->
@@ -135,22 +74,5 @@
                 <p><i class="fas fa-fw fa-spin fa-circle-notch"></i> Loading Properties!</p>
             </div>
         </section>
-    </main>
-
-    <!-- The page footer -->
-    <footer class="footer">
-        <div class="content has-text-centered">
-            <p><a href="https://github.com/itsmeimtom/solcol-real-estate">Source Code</a> for this site</p>
-        </div>
-    </footer>
-
-    <!-- this file contains our list of properties -->
-    <script src="js/-properties.js"></script>
-    <!-- this file contains for listing and sorting the elements -->
-    <script src="js/listing.js"></script>
-    <!-- this file contains for filtering properties -->
-    <script src="js/filtering.js"></script>
-
-</body>
-
-</html>
+  
+        

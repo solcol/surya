@@ -39,7 +39,7 @@ const properties = [{
 },
 
 {
-    "title": "Stratford Road, Wootton Warwen",
+    "title": "Stratford Road, Wootton Wawen",
     "type": "house",
     "is_for": "purchase",
     "rights": "Freehold",
@@ -101,7 +101,6 @@ const properties = [{
     "images": [
         "img/houses/4/outside.jpeg",
         "img/houses/4/livingroom.jpeg",
-        "img/houses/4/kitchen.jpeg",
         "img/houses/4/bathroom.jpeg"
     ],
     "url": "property4.html",
