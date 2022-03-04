@@ -18,7 +18,7 @@ const properties = [
             "{{ i }}"{% if forloop.last != true %},{% endif %}
             {% endfor %}
         ],
-        "url": "property2.html",
+        "url": "{{ p.permalink }}",
         "weight": Math.random()
     }{% if forloop.last != true %},{% endif %}
     {% endfor %}

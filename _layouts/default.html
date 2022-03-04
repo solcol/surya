@@ -68,7 +68,13 @@
         <!-- each distinct section on the page is wrapped in a "section" element -->
         <!-- as previously, the "section" class tells bulma that we want this to be styled like a section -->
         
-        {{ content }}
+        {% if page.layout == "property" %}
+            {% include property_page.html %}
+        {% else %}
+            {{ content }}
+        {% endif %}
+
+
     </main>
 
     <!-- The page footer -->
