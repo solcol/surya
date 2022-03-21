@@ -14,11 +14,11 @@ nav.navbar h1 {
 styling the "surya estate agents" link
 */
 
-nav a.navbar-brand {
+nav .navbar-brand a {
     color: inherit;
 }
 
-nav a.navbar-brand:hover {
+nav .navbar-brand a:hover {
     text-decoration: underline;
 }
 

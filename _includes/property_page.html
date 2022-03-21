@@ -7,7 +7,7 @@
 
             <div id="image-gallery-picker" class="columns is-multiline">
                 {% for i in page.images %}
-                    <a href="#image-gallery" onclick="setImage(this)" class="column is-one-quarter {% if forloop.first %}card{% endif %}"><img id="image-{{ forloop.index }}" src="{{ i }}" aria-hidden="true"></a>
+                    <a href="javascript:void(0);" onclick="setImage(this)" class="column is-one-quarter {% if forloop.first %}card{% endif %}"><img id="image-{{ forloop.index }}" src="{{ i }}" aria-hidden="true"></a>
                 {% endfor %}
             </div>
         </div>
